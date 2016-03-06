@@ -73,6 +73,8 @@ if __name__ == '__main__':
             sys.exit()
         # print '>>>min', int(Alpha.options.min)
 
+    print Alpha.node
+
     index = 0
     for v in list:
         if Alpha.options.xseq == 'true':
@@ -84,7 +86,6 @@ if __name__ == '__main__':
         # print list_des
         # list_des = Alpha.uniq(list_des)
 
-        print Alpha.node
         for k in list_des:
             if k != v:
                 print str(index) + ',' + str(v) + ',' + str(k) + ',' + str(random.randint(1, 20))
