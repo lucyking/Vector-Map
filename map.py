@@ -25,7 +25,7 @@ class Alpha(object):
         opt.add_option('-x', '--xseq', metavar='true', default='false',
                        help='gen break index list')
         opt.add_option('-b', '--branch', metavar='N', default=8,
-                       help='set branch number')
+                       help='set branch number<=N')
         opt.add_option('-n', '--node', metavar='M', default=600,
                        help='set nodes number')
         opt.add_option('--min', metavar='Num', default=0,
