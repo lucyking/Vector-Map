@@ -5,7 +5,7 @@ Generate specific vector map with several parameters.
 ## Usage
 
 ```
->python map.py -h
+python map.py -h
 ```
 ```
 Usage: map.py [options]
@@ -20,7 +20,7 @@ Options:
 ```
 ## Example
 ```
->python map.py -b 3 -n 5 --min 2
+python map.py -b 3 -n 5 --min 2
 ```
 ```
 5
