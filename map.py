@@ -22,14 +22,14 @@ class Alpha(object):
 
     def parse_option(self):
         opt = optparse.OptionParser()
-        opt.add_option('-x', '--xseq', metavar='true', default='false',
-                       help='gen break index list')
         opt.add_option('-b', '--branch', metavar='N', default=8,
                        help='set branch number<=N')
         opt.add_option('-n', '--node', metavar='M', default=600,
                        help='set nodes number')
         opt.add_option('--min', metavar='Num', default=0,
                        help='set min vector,min<=branch')
+        opt.add_option('-x', '--xseq', metavar='true', default='false',
+                       help='gen breaking index list')
         options, arguments = opt.parse_args()
         return options
 
