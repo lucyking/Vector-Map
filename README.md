@@ -10,11 +10,11 @@ Usage: map.py [options]
 
 Options:
   -h, --help            show this help message and exit
-  -x true, --xseq=true  gen break index list
-  -b N, --branch=N      set branch number
+  -b N, --branch=N      set branch number<=N
   -n M, --node=M        set nodes number
-  --min=Num             set min<=n(vector),min<=branch
-
+  --min=Num             set min vector,min<=branch
+  -x true, --xseq=true  gen breaking index list
+  
 ```
 ## Example
 ```
