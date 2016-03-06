@@ -16,7 +16,6 @@ class Alpha(object):
         self.options = self.parse_option()
         if self.options.branch:
             self.branch = int(self.options.branch)
-            # print self.options.branch
         if self.options.node:
             self.node = int(self.options.node)
 
@@ -71,7 +70,6 @@ if __name__ == '__main__':
         if int(Alpha.options.min)>int(Alpha.options.branch):
             print 'int(min) should <= int(branch)'
             sys.exit()
-        # print '>>>min', int(Alpha.options.min)
 
     print Alpha.node
 
@@ -81,9 +79,7 @@ if __name__ == '__main__':
             list_tmp = xrange(random.randint(0, Alpha.branch))  # gen des_list[>length<]
         else:
             list_tmp = xrange(random.randint(Alpha.min_branch, Alpha.branch))
-        # print list_tmp
         list_des = map(lambda x: random.randint(0, Alpha.node), list_tmp)  # gen des_list[>index<]
-        # print list_des
         list_des = Alpha.uniq(list_des)   # <-- comment this line to gen duplicate vector
 
         for k in list_des:
