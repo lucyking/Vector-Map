@@ -84,6 +84,7 @@ if __name__ == '__main__':
         # print list_des
         # list_des = Alpha.uniq(list_des)
 
+        print Alpha.node
         for k in list_des:
             if k != v:
                 print str(index) + ',' + str(v) + ',' + str(k) + ',' + str(random.randint(1, 20))
