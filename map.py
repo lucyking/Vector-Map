@@ -16,7 +16,7 @@ class Alpha(object):
         self.options = self.parse_option()
         if self.options.branch:
             self.branch = int(self.options.branch)
-            print self.options.branch
+            # print self.options.branch
         if self.options.node:
             self.node = int(self.options.node)
 
@@ -89,6 +89,6 @@ if __name__ == '__main__':
                 print str(index) + ',' + str(v) + ',' + str(k) + ',' + str(random.randint(1, 20))
                 index += 1
 
-    print 'Node:', len(list),'|',
-    print 'vector:', index,'|',
-    print 'Break-sequence:', Alpha.options.xseq
+    # print 'Node:', len(list),'|',
+    # print 'vector:', index,'|',
+    # print 'Break-sequence:', Alpha.options.xseq
