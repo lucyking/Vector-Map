@@ -1,24 +1,28 @@
 # Vector-Map
-Generate specific vector map with several parameters.
+Generate specific vector map with parameters.
 
 
 ## Usage
 
 ```
->>>python map.py -h
+python map.py -h
+```
+```
 Usage: map.py [options]
 
 Options:
   -h, --help            show this help message and exit
-  -x true, --xseq=true  gen break index list
-  -b N, --branch=N      set branch number
+  -b N, --branch=N      set branch number<=N
   -n M, --node=M        set nodes number
-  --min=Num             set min<=n(vector),min<=branch
-
+  --min=Num             set min vector,min<=branch
+  -x true, --xseq=true  gen breaking index list
+  
 ```
 ## Example
 ```
->>>python map.py -b 3 -n 5 --min 2
+python map.py -b 3 -n 5 --min 2
+```
+```
 5
 0,0,2,13
 1,1,3,14
