@@ -84,7 +84,7 @@ if __name__ == '__main__':
         # print list_tmp
         list_des = map(lambda x: random.randint(0, Alpha.node), list_tmp)  # gen des_list[>index<]
         # print list_des
-        # list_des = Alpha.uniq(list_des)
+        list_des = Alpha.uniq(list_des)   # <-- comment this line to gen duplicate vector
 
         for k in list_des:
             if k != v:
