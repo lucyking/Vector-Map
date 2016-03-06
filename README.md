@@ -1,5 +1,5 @@
 # Vector-Map
-Generate specific vector map with parameters.
+Generate vector map with parameters.
 
 
 ## Usage
